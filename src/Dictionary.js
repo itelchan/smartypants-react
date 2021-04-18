@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 import pandaSquare from "../src/images/pandaSquare.png";
 
@@ -9,9 +10,21 @@ export default function Dictionary() {
     setSearchedWord(event.target.value);
   }
 
+  function handleResponse(response)
+  {
+      console.log(response.data[0]);
+  }
+
   function searchWord(event) {
     event.preventDefault();
-    alert(`Searching for ${searchedWord}`);
+    //alert(`Searching for ${searchedWord}`); //TEST
+
+    // Documentation: https://dictionaryapi.dev/
+    let apiURL = "https://api.dictionaryapi.dev/api/v2/entries/en_US/";
+    let buildApiURL =  apiURL + searchedWord;
+    console.log(buildApiURL);
+    axios.get(buildApiURL).then(handleResponse);
+
   }
 
   return (

@@ -1,7 +1,7 @@
 import "./App.css";
 import Dictionary from "./Dictionary";
 import bannerImage from "../src/images/BannerSmartyPantsPanda.png";
-import { Ellipsis } from "react-css-spinners";
+//import { Ellipsis } from "react-css-spinners";
 
 export default function App() {
   return (
