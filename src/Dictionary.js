@@ -1,18 +1,26 @@
 import React, { useState } from "react";
+import Results from "./Results";
 import axios from "axios";
 
 import pandaSquare from "../src/images/pandaSquare.png";
 
 export default function Dictionary() {
   let [searchedWord, setSearchedWord] = useState("");
+  let [definitionResults, setDefinitionResults] = useState(null);
 
   function handleSearchedWord(event) {
     setSearchedWord(event.target.value);
   }
 
-  function handleResponse(response)
-  {
-      console.log(response.data[0]);
+  function handleResponse(response) {
+    let responseOfDefinitions = response.data[0];
+    // complete response
+    console.log(response.data[0]);
+
+    // One element
+    console.log(response.data[0].meanings[0].definitions[0].definition);
+
+    setDefinitionResults(responseOfDefinitions);
   }
 
   function searchWord(event) {
@@ -21,10 +29,9 @@ export default function Dictionary() {
 
     // Documentation: https://dictionaryapi.dev/
     let apiURL = "https://api.dictionaryapi.dev/api/v2/entries/en_US/";
-    let buildApiURL =  apiURL + searchedWord;
+    let buildApiURL = apiURL + searchedWord;
     console.log(buildApiURL);
     axios.get(buildApiURL).then(handleResponse);
-
   }
 
   return (
@@ -63,6 +70,8 @@ export default function Dictionary() {
           </div>
         </div>
       </form>
+
+      <Results dResults={definitionResults} />
     </div>
   );
 }

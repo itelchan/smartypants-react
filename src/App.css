@@ -64,7 +64,7 @@ a {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .footer,
@@ -102,10 +102,19 @@ a {
   font-size: 20px;
 }
 
-.detailText {
+.definitionText,
+.exampleText {
   color: rgb(39, 31, 22);
   font-size: 17px;
   font-family: "Neuton", serif;
+}
+
+.definitionText {
+font-weight:bold;
+}
+
+.exampleText {
+ font-style: italic;
 }
 
 .resultWrap {
@@ -114,6 +123,7 @@ a {
   background-color: #f8ffe5;
   box-shadow: 5px 5px 5px rgb(0 0 0 / 40%);
   padding: 10px;
+  padding-bottom: 20px;
   margin-bottom: 15px;
 }
 
