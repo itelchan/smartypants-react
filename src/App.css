@@ -1,0 +1,149 @@
+.App {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #f8ffe5;
+  font-variant: normal;
+  font-size: 18px;
+}
+
+h4 {
+  color: #f8ffe5;
+  font-variant: normal;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+}
+
+.thecentralcard {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border-color: rgb(39, 31, 22);
+  border-width: none;
+  background: rgb(39, 31, 22);
+  background: linear-gradient(
+    180deg,
+    rgba(39, 31, 22) 31%,
+    rgba(41, 115, 115, 1) 64%,
+    rgba(210, 229, 126, 1) 100%
+  );
+}
+
+.bannerImage {
+  border-radius: 10px;
+}
+
+.mainImageCol {
+  padding: 5px;
+  margin: 0;
+}
+
+.mainImage {
+  max-width: 9em;
+  display: block;
+  margin: 0 auto;
+}
+
+.searchedWordColumn {
+  padding-bottom: 20px;
+}
+
+.searchButton {
+  background: #d2e57e;
+  border: #d2e57e;
+  color: rgb(39, 31, 22);
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  margin-top:40px;
+}
+
+.footer,
+.searchButton,
+.searchingColumn {
+  font-family: "Itim", cursive;
+}
+
+.definitionTypeText,
+.pronunciationWordText,
+.wordTitleText {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.wordTitleText {
+  font-size: 40px;
+  line-height: 50px;
+  color: #dd9148;
+}
+
+.definitionTypeText {
+  font-size: 25px;
+  line-height: 35px;
+  color: #dd9148;
+}
+
+.wordTitleText,
+.pronunciationWordText {
+  text-align: center;
+}
+
+.pronunciationWordText {
+  color: #dc8e7f;
+  font-size: 20px;
+}
+
+.detailText {
+  color: rgb(39, 31, 22);
+  font-size: 17px;
+  font-family: "Neuton", serif;
+}
+
+.resultWrap {
+  border: 1px solid #f8ffe5;
+  border-radius: 7px;
+  background-color: #f8ffe5;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 40%);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.resultImg {
+  border-radius: 10px;
+  background: #f8ffe5;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 40%);
+}
+
+.imageCol {
+  margin-bottom: 15px;
+}
+
+.imagesRow {
+  margin-top: 35px;
+}
+
+.footer {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  margin-top: 25px;
+}
+
+.loading {
+  margin: 0 auto;
+  position: center;
+  font-variant: normal;
+  font-weight: bolder;
+  font-size: 30px;
+}
