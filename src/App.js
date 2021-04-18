@@ -16,7 +16,7 @@ export default function App() {
           </div>
           <h4 className="footer">
             &nbsp;
-            <a href="https://github.com/itelchan/SmartyPantsPanda/" target="_blank" rel="noreferrer">
+            <a href="https://github.com/itelchan/smartypants-react" target="_blank" rel="noreferrer">
               Open-source code by:
             </a>
             <a href="https://commons.wikimedia.org/wiki/User:Itelchan" target="_blank" rel="noreferrer">
