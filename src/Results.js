@@ -1,12 +1,12 @@
 import React from "react";
 import Meanings from "./Meanings";
+import Pronunciation from "./Pronunciation";
 
 export default function Results(props) {
   console.log(props.dResults);
 
   if (props.dResults) {
     let word = props.dResults.word;
-    let pronunciation = props.dResults.phonetics[0].text;
 
     return (
       <div className="Results">
@@ -17,22 +17,14 @@ export default function Results(props) {
                 <section id="wordText">{word}</section>
               </div>
             </div>
-            <div className="row searchedWordRow">
-              <div className="col-md-12 pronunciationWordText">
-                <section id="pronunciationWord">{pronunciation}</section>
-              </div>
-            </div>
+            <Pronunciation results={props.dResults} />
           </div>
         </div>
 
         {props.dResults.meanings.map(function (meaning, index) {
-
-
           return (
             <div key={index}>
-              <Meanings
-                meaning={meaning}
-              />
+              <Meanings meaning={meaning} />
             </div>
           );
         })}

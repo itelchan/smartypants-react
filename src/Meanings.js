@@ -19,7 +19,6 @@ export default function Meanings(props) {
             <div key={index}>
               <div className="row searchedWordRow">
                 <div className="col-md-12 definitionText ">
-                  
                   <hr className="rounded" />
                   <section>{definition.definition}</section>
                 </div>

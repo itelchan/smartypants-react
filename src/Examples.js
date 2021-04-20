@@ -5,7 +5,7 @@ export default function Examples(props) {
     return (
       <div className="row searchedWordRow">
         <div className="col-md-12 exampleText ">
-        <section>{`Example: ${props.examples} `}</section>
+          <section>{`Example: ${props.examples} `}</section>
         </div>
       </div>
     );
