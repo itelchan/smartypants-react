@@ -1,27 +1,9 @@
 import React from "react";
+import Synonyms from "./Synonyms";
+import Examples from "./Examples";
 
 export default function Meanings(props) {
   let partOfSpeech = props.meaning.partOfSpeech;
-
-  function examplesFunc(respExample) {
-    let example = null;
-
-    if (respExample) {
-      example = respExample;
-    }
-
-    if (example) {
-      return (
-        <div className="row searchedWordRow">
-          <div className="col-md-12 exampleText ">
-            <section>{`Example: ${example} `}</section>
-          </div>
-        </div>
-      );
-    } else {
-      return null;
-    }
-  }
 
   return (
     <div className="row resultRow resultWrap justify-content-center">
@@ -37,11 +19,15 @@ export default function Meanings(props) {
             <div key={index}>
               <div className="row searchedWordRow">
                 <div className="col-md-12 definitionText ">
-                  <br />
+                  
+                  <hr className="rounded" />
                   <section>{definition.definition}</section>
                 </div>
               </div>
-              {examplesFunc(definition.example)}
+              <Examples examples={definition.example} />
+
+              <Synonyms synonyms={definition.synonyms} />
+              <br />
             </div>
           );
         })}

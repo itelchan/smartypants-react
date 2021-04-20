@@ -84,26 +84,42 @@ a {
   font-size: 40px;
   line-height: 50px;
   color: #dd9148;
+  text-align: center;
 }
+
 
 .definitionTypeText {
   font-size: 25px;
   line-height: 35px;
   color: #dd9148;
+  font-weight: bold;
 }
 
-.wordTitleText,
-.pronunciationWordText {
-  text-align: center;
+.synonymsTitle {
+  font-size: 17px;
+  color: #dd9148;
+  font-weight: bold;
 }
+
+
+.definitionTypeText,
+.synonymsTitle,
+.wordTitleText
+{
+  color: #dd9148;
+}
+
 
 .pronunciationWordText {
   color: #dc8e7f;
   font-size: 20px;
+  text-align: center;
 }
 
 .definitionText,
-.exampleText {
+.exampleText,
+.synonymsText
+{
   color: rgb(39, 31, 22);
   font-size: 17px;
   font-family: "Neuton", serif;
@@ -156,4 +172,10 @@ font-weight:bold;
   font-variant: normal;
   font-weight: bolder;
   font-size: 30px;
+}
+
+
+/* Rounded border */
+hr.rounded {
+  border-top: 5px solid #f8ffe5;
 }
