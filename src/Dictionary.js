@@ -21,10 +21,10 @@ export default function Dictionary() {
   function handleDictResponse(response) {
     let responseOfDefinitions = response.data[0];
     // complete response
-    console.log(response.data[0]);
+    // console.log(response.data[0]);
 
     // One element
-    console.log(response.data[0].meanings[0].definitions[0].definition);
+    //console.log(response.data[0].meanings[0].definitions[0].definition);
 
     setDefinitionResults(responseOfDefinitions);
   }
