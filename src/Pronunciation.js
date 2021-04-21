@@ -1,4 +1,5 @@
 import React from "react";
+import "./Pronunciation.css";
 
 export default function Pronunciation(props) {
   return (

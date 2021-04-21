@@ -2,6 +2,8 @@ import React from "react";
 import Synonyms from "./Synonyms";
 import Examples from "./Examples";
 
+import "./Meanings.css";
+
 export default function Meanings(props) {
   let partOfSpeech = props.meaning.partOfSpeech;
 

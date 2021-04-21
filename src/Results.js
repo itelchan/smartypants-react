@@ -2,6 +2,8 @@ import React from "react";
 import Meanings from "./Meanings";
 import Pronunciation from "./Pronunciation";
 
+import "./Results.css";
+
 export default function Results(props) {
   console.log(props.dResults);
 

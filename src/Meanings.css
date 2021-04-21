@@ -1,0 +1,14 @@
+/* Rounded border */
+hr.rounded {
+    border-top: 5px solid #f8ffe5;
+  }
+
+.resultWrap {
+    border: 1px solid #f8ffe5;
+    border-radius: 7px;
+    background-color: #f8ffe5;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 40%);
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+  }  

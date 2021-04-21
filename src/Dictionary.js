@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Results from "./Results";
 import axios from "axios";
 
+import "./Dictionary.css";
+
 import pandaSquare from "../src/images/pandaSquare.png";
 
 export default function Dictionary() {
