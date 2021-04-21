@@ -1,0 +1,10 @@
+
+.imageCol{
+    padding: 5px;
+  }
+  
+  .resultImg {
+    border-radius: 7px;
+    background: #f8ffe5;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 40%);
+  }

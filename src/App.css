@@ -92,7 +92,6 @@ a {
 
 .synonymsTitle {
   font-size: 17px;
-  color: #dd9148;
   font-weight: bold;
 }
 
@@ -127,7 +126,7 @@ a {
 
 
 .resultImg {
-  border-radius: 10px;
+  border-radius: 7px;
   background: #f8ffe5;
   box-shadow: 5px 5px 5px rgb(0 0 0 / 40%);
 }
@@ -152,3 +151,6 @@ a {
 
 
 
+.imageCol{
+  padding: 5px;
+}
