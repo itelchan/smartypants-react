@@ -2,7 +2,7 @@
     margin-bottom: 15px;
   }
   
-.imagesRow {
-    margin-top: 35px;
-  }
-  
+  .imagesRow {
+    padding: 10px;
+    margin: 6px;
+  }  

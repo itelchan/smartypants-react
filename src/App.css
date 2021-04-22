@@ -103,7 +103,7 @@ a {
 
 .pronunciationWordText {
   color: #dc8e7f;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -112,25 +112,20 @@ a {
 .synonymsText {
   color: rgb(39, 31, 22);
   font-size: 16px;
-  font-family: "Neuton", serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+
 .definitionText {
-  font-weight: bold;
+  font-weight:normal;
   font-size: 18px;
 }
 
 .exampleText {
   font-style: italic;
+  opacity: 0.8;
 }
-
-
-.resultImg {
-  border-radius: 7px;
-  background: #f8ffe5;
-  box-shadow: 5px 5px 5px rgb(0 0 0 / 40%);
-}
-
 
 .footer {
   text-align: center;
@@ -149,8 +144,3 @@ a {
   font-size: 30px;
 }
 
-
-
-.imageCol{
-  padding: 5px;
-}
