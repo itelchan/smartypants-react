@@ -5,7 +5,7 @@ import Pronunciation from "./Pronunciation";
 import "./Results.css";
 
 export default function Results(props) {
-  console.log(props.dResults);
+  //console.log(props.dResults);
 
   if (props.dResults) {
     let word = props.dResults.word;
@@ -33,6 +33,9 @@ export default function Results(props) {
       </div>
     );
   } else {
-    return null;
+    return (
+      <div className="Results">
+      </div>
+    );
   }
 }

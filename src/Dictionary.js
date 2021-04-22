@@ -25,8 +25,8 @@ export default function Dictionary() {
 
     // One element
     //console.log(response.data[0].meanings[0].definitions[0].definition);
-
     setDefinitionResults(responseOfDefinitions);
+
   }
 
   function handlePrexelsResponse(response) {
@@ -39,9 +39,14 @@ export default function Dictionary() {
       setMainPic(response.data.photos[0].src.medium);
     }
     else{
-
       setMainPic(pandaSquare);  
     }
+  }
+
+
+  function catchFunction() {
+    //console.log("catchfunction");
+    setDefinitionResults(null);    
   }
 
   function searchWord(event) {
@@ -51,7 +56,7 @@ export default function Dictionary() {
     // Documentation: https://dictionaryapi.dev/
     let apiURL = "https://api.dictionaryapi.dev/api/v2/entries/en_US/";
     let buildApiURL = apiURL + searchedWord;
-    axios.get(buildApiURL).then(handleDictResponse);
+    axios.get(buildApiURL).then(handleDictResponse).catch(catchFunction);
 
     /* Pexel */
     const pexelsAPIKey =
