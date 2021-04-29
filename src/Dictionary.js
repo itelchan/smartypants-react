@@ -36,7 +36,7 @@ export default function Dictionary() {
 
     //console.log(response.data.photos[0].src.medium);
     if (response.data.photos.length !== 0) {
-      setMainPic(response.data.photos[0].src.medium);
+      setMainPic(response.data.photos[0].src.landscape);
     }
     else{
       setMainPic(pandaSquare);  
@@ -101,7 +101,7 @@ export default function Dictionary() {
           <div className="col-5 mainImageCol">
             <img alt="mainImage" src={mainPic} className="rounded mainImage" />
           </div>
-          <div className="col-5  searchingColumn">
+          <div className="col-4  searchingColumn">
             <h3>Let's look a word up:</h3>
             <input
               type="search"
@@ -112,34 +112,34 @@ export default function Dictionary() {
               placeholder="Word to define..."
             />
           </div>
-          <div className="col-2 buttonColumn">
+          <div className="col-3 buttonColumn">
             <button
               type="submit"
               name="searchEnglish"
               className="btn btn-info mx-sm-2 mb-2 shadow searchButton"
             >
-              I'll search 🐼🇺🇸
+              I'll search 🐼 🇺🇸
             </button>
             <button
               onClick={handleSpanishAlternate.bind(this)}
               name="searchSpanish"
               className="btn btn-info mx-sm-2 mb-2 shadow searchButton"
             >
-              Buscaré 🐼🇲🇽
+               ¡Buscaré!  🐼 🇲🇽 
             </button>               
             <button
               onClick={handleGermanAlternate.bind(this)}
               name="searchGerman"
               className="btn btn-info mx-sm-2 mb-2 shadow searchButton"
             >
-              Ich suche 🐼🇩🇪
+              Ich suche 🐼 🇩🇪
             </button>   
             <button
               onClick={handleFrenchAlternate.bind(this)}
               name="searchFrench"
               className="btn btn-info mx-sm-2 mb-2 shadow searchButton"
             >
-              Rechercher 🐼🇫🇷
+              Rechercher🐼🇫🇷
             </button>   
           </div>
         </div>
