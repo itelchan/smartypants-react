@@ -54,13 +54,13 @@ a {
   background: #d2e57e;
   border: #d2e57e;
   color: rgb(39, 31, 22);
-  padding: 8px;
+  padding: 4px;
   border: none;
   border-radius: 7px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 4px;
 }
 
 .footer,

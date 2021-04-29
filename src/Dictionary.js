@@ -21,7 +21,7 @@ export default function Dictionary() {
   function handleDictResponse(response) {
     let responseOfDefinitions = response.data[0];
     // complete response
-    // console.log(response.data[0]);
+     console.log(response.data[0]);
 
     // One element
     //console.log(response.data[0].meanings[0].definitions[0].definition);
@@ -31,7 +31,7 @@ export default function Dictionary() {
 
   function handlePrexelsResponse(response) {
     // complete response
-    //console.log(response.data);
+    console.log(response.data);
     setPhotos(response.data.photos);
 
     //console.log(response.data.photos[0].src.medium);
@@ -52,9 +52,32 @@ export default function Dictionary() {
   function searchWord(event) {
     event.preventDefault();
     //alert(`Searching for ${searchedWord}`); //TEST
-
-    // Documentation: https://dictionaryapi.dev/
     let apiURL = "https://api.dictionaryapi.dev/api/v2/entries/en_US/";
+    genericHandle(apiURL);
+  }
+
+  function handleSpanishAlternate(event){
+    event.preventDefault();
+    let apiURL = "https://api.dictionaryapi.dev/api/v2/entries/es/";
+    genericHandle(apiURL);
+  }
+
+  function handleGermanAlternate(event){
+    event.preventDefault();
+    let apiURL = "https://api.dictionaryapi.dev/api/v2/entries/de/";
+    genericHandle(apiURL);
+  }
+
+  function handleFrenchAlternate(event){
+    event.preventDefault();
+    let apiURL = "https://api.dictionaryapi.dev/api/v2/entries/fr/";
+    genericHandle(apiURL);
+
+  }
+
+
+  function genericHandle(apiURL){
+    // Documentation: https://dictionaryapi.dev/
     let buildApiURL = apiURL + searchedWord;
     axios.get(buildApiURL).then(handleDictResponse).catch(catchFunction);
 
@@ -64,6 +87,7 @@ export default function Dictionary() {
     let pexelsURL = `https://api.pexels.com/v1/search?query=${searchedWord}&per_page=9`;
     const header = { Authorization: `Bearer ${pexelsAPIKey}` };
     axios.get(pexelsURL, { headers: header }).then(handlePrexelsResponse);
+
   }
 
   return (
@@ -91,10 +115,32 @@ export default function Dictionary() {
           <div className="col-2 buttonColumn">
             <button
               type="submit"
+              name="searchEnglish"
               className="btn btn-info mx-sm-2 mb-2 shadow searchButton"
             >
-              I'll search 🐼
+              I'll search 🐼🇺🇸
             </button>
+            <button
+              onClick={handleSpanishAlternate.bind(this)}
+              name="searchSpanish"
+              className="btn btn-info mx-sm-2 mb-2 shadow searchButton"
+            >
+              Buscaré 🐼🇲🇽
+            </button>               
+            <button
+              onClick={handleGermanAlternate.bind(this)}
+              name="searchGerman"
+              className="btn btn-info mx-sm-2 mb-2 shadow searchButton"
+            >
+              Ich suche 🐼🇩🇪
+            </button>   
+            <button
+              onClick={handleFrenchAlternate.bind(this)}
+              name="searchFrench"
+              className="btn btn-info mx-sm-2 mb-2 shadow searchButton"
+            >
+              Rechercher 🐼🇫🇷
+            </button>   
           </div>
         </div>
       </form>
