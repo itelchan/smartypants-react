@@ -6,8 +6,13 @@ import bannerImage from "../src/images/BannerSmartyPantsPanda.png";
 export default function App() {
   return (
     <div className="App">
-      <div className="container">
-      <div className="card mb-3 thecentralcard">
+      <div className="mainContainer">
+          <div
+            className="card mb-3 thecentralcard"
+            style={{
+              alignSelf: "flex-start",
+            }}
+          >
         <img src={bannerImage} className="card-img-top embed-responsive-16by9 bannerImage" alt="TheSmartyPantsPandaImage" />
         <div className="card-body">
           <div className="card-text">
