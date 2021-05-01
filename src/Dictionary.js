@@ -36,7 +36,7 @@ export default function Dictionary() {
 
     //console.log(response.data.photos[0].src.medium);
     if (response.data.photos.length !== 0) {
-      setMainPic(response.data.photos[0].src.landscape);
+      setMainPic(response.data.photos[0].src.medium);
     }
     else{
       setMainPic(pandaSquare);  
