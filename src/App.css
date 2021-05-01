@@ -4,9 +4,10 @@
 }
 
 h3 {
+  margin-top: 30px;
   color: #f8ffe5;
   font-variant: normal;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 h4 {
@@ -40,7 +41,7 @@ a {
 }
 
 .mainImageCol {
-  padding: 5px;
+  padding: 0;
   margin: 0;
 }
 
@@ -48,13 +49,14 @@ a {
   max-width: 9em;
   display: block;
   margin: 0 auto;
+  padding: 0;
 }
 
 .searchButton {
   background: #d2e57e;
   border: #d2e57e;
   color: rgb(39, 31, 22);
-  padding: 4px;
+  padding: 3px;
   border: none;
   border-radius: 7px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -91,7 +93,7 @@ a {
 }
 
 .synonymsTitle {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -103,7 +105,7 @@ a {
 
 .pronunciationWordText {
   color: #dc8e7f;
-  font-size: 22px;
+  font-size: 21px;
   text-align: center;
 }
 
@@ -111,15 +113,13 @@ a {
 .exampleText,
 .synonymsText {
   color: rgb(39, 31, 22);
-  font-size: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-
-
 .definitionText {
-  font-weight:normal;
-  font-size: 18px;
+  font-weight: normal;
+  font-size: 17px;
 }
 
 .exampleText {
@@ -144,3 +144,17 @@ a {
   font-size: 30px;
 }
 
+#inputWord {
+  padding: 3px;
+  font-size: 15px;
+}
+
+#smartyPantsPandaForm{
+  padding: 3px;
+
+}
+
+.card-body{
+  padding-right: 3px;
+  padding-left: 3px;
+}
