@@ -29,7 +29,7 @@ export default function Dictionary() {
 
   }
 
-  function handlePrexelsResponse(response) {
+  function handleImagesResponse(response) {
     // complete response
     console.log(response.data);
     setPhotos(response.data.photos);
@@ -82,11 +82,13 @@ export default function Dictionary() {
     axios.get(buildApiURL).then(handleDictResponse).catch(catchFunction);
 
     /* Pexel */
-    const pexelsAPIKey =
-      "563492ad6f9170000100000126265f83f06248d095902e5d4ff4cc5b";
-    let pexelsURL = `https://api.pexels.com/v1/search?query=${searchedWord}&per_page=9`;
-    const header = { Authorization: `Bearer ${pexelsAPIKey}` };
-    axios.get(pexelsURL, { headers: header }).then(handlePrexelsResponse);
+   // const pexelsAPIKey =
+   //   "563492ad6f9170000100000126265f83f06248d095902e5d4ff4cc5b";
+   // let pexelsURL = `https://api.pexels.com/v1/search?query=${searchedWord}&per_page=9`;
+    let apiKey = "c3aca8dt904b8823ba1b2dff34c60c1o";
+    let apiUrl = `https://api.shecodes.io/images/v1/search?query=${searchedWord}&key=${apiKey}`;
+    const header = { Authorization: `Bearer ${apiKey}` };
+    axios.get(apiURL, { headers: header }).then(handleImagesResponse);
 
   }
 
