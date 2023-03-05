@@ -34,9 +34,9 @@ export default function Dictionary() {
     console.log(response.data);
     setPhotos(response.data.photos);
 
-    //console.log(response.data.photos[0].src.medium);
+    //console.log(response.data.photos[0].src.original);
     if (response.data.photos.length !== 0) {
-      setMainPic(response.data.photos[0].src.medium);
+      setMainPic(response.data.photos[0].src.original);
     }
     else{
       setMainPic(pandaSquare);  
